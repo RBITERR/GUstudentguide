@@ -1,0 +1,23 @@
+﻿
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>Rango</title>
+</head>
+
+<body>
+    <h1>Welcome to GUStudentGuide</h1>
+    <div>
+        hey! <br />
+        <strong>{{ boldmessage }}</strong><br />
+    </div>
+    <div>
+        <a href="/rango/about/">About</a><br />
+        <img src="{% static 'images/homepage1.jpg' %}"
+        alt="GU homepage" />
+    </div>
+</body>
+</html>
