@@ -1,7 +1,7 @@
 ﻿
 <!DOCTYPE html>
 
-{% load staticfiles %}
+{% load static %}
 
 <html>
 <head>
@@ -11,8 +11,11 @@
 <body>
     <h1>Welcome to GUStudentGuide</h1>
     <div>
-        hey! <br />
-        <strong>{{ boldmessage }}</strong><br />
+        {% if user.is_authenticated %}
+                Tell Us All About Glasgow {{ user.username }}!
+           {% else %}
+                Welcome
+           {% endif %}
     </div>
     <div>
         <a href="/rango/about/">About</a><br />
