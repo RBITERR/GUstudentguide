@@ -32,9 +32,10 @@ ALLOWED_HOSTS = []
 
 REGISTRATION_OPEN = True
 ACCOUNT_ACTIVATION_DAYS = 7
+ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
-LOGIN_REDIRECT_URL = 'rango:index'
-LOGIN_URL = 'auth_login'
+LOGIN_REDIRECT_URL = '/rango/'
+LOGIN_URL = '/accounts/login'
 
 
 # Application definition
